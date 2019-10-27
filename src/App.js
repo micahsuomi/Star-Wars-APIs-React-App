@@ -10,6 +10,21 @@ import StarshipCard from './StarshipCard';
 import MovieRating from './MovieRating';
 import AboutMe from './AboutMe';
 import Footer from './Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+AOS.init({
+    offset: 400,
+    duration: 800
+  });
+AOS.init({
+  disable: function() {
+    let maxWidth = 550;
+    return window.innerWidth < maxWidth;
+  }
+
+})
 
 function App() {
   return (

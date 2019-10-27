@@ -1,13 +1,5 @@
 import React, { Component } from 'react';
 import './CardData.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-
-AOS.init({
-    offset: 400,
-    duration: 800
-});
 
 class CharacterCard extends Component {
     constructor() {
