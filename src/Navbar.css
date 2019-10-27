@@ -78,7 +78,8 @@
         align-items: center; 
         position: fixed;
         opacity: 0.9;
-       
+        right: 0.5%;
+        top: 0%;
     }
 
     .nav-link {
