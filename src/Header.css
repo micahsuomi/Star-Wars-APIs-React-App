@@ -128,4 +128,21 @@
     margin-top: 2rem;
    
   }
+
+  .icon-scroll:before {
+    animation-name: scroll;
+  }
+
+  
+@keyframes scroll {
+  0% {
+      opacity: 1;
+
+  }
+100% {
+  opacity: 0;
+  transform: translateY(36px);
+
+}
+}
 }
