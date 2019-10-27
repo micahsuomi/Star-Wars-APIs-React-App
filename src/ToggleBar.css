@@ -1,0 +1,25 @@
+
+@media(max-width:550px) {
+    nav {
+        position: relative;
+    }
+    
+    .hamburger {
+        position: absolute;
+        right: 1%;
+        top: 1%;
+        transform: translate(-40%), -2%;
+        height: 4.5rem;
+        width: 5rem;
+        cursor: pointer;
+    
+    }
+    .line {
+        width: 26px;
+        height: 4px;
+        margin: .7rem;
+        background-color: whitesmoke;
+    
+    }
+
+}

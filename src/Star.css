@@ -1,0 +1,36 @@
+
+.fa-star {
+    margin: .4rem;
+    cursor: pointer;
+}
+
+.stars-wrapper {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.red:hover {
+    color:rgb(226, 79, 79);
+}
+
+.orange:hover {
+    color: orange;
+
+}
+
+.green:hover {
+    color: green;
+}
+
+
+.score {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: var(--font-size-small-medium);
+    transition: 1s ease-out;
+}
+
+
+
