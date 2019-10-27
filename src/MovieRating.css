@@ -70,7 +70,8 @@
 @media(max-width: 550px) {
     .movie-container {
         grid-template-columns: 1fr;
-        height: 60rem;
+        height: 55rem;
+        grid-gap: 0;
     }
 }
 
