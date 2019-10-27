@@ -21,7 +21,9 @@
     font-size: var(--font-size-small);
 }
 
-.footer-wrapper ul .footer-text a:link {
+.footer-wrapper ul .footer-text a:link,
+.footer-wrapper ul .footer-text a:before,
+.footer-wrapper ul .footer-text a:after {
     text-decoration: none;
     color: whitesmoke;
 
