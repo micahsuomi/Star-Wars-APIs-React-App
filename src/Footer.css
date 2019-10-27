@@ -38,3 +38,9 @@
     }
 }
 
+@media(max-width: 375) {
+    .footer {
+        margin-top: 10rem;
+    }
+}
+
