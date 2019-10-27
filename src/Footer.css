@@ -33,3 +33,9 @@
     color: skyblue;
 }
 
+@media(max-width: 550px) {
+    .footer {
+        margin-top: 7rem;
+    }
+}
+

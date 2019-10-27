@@ -50,13 +50,20 @@
 
 }
 
-.react-logo-placeholder {
-  padding-top: 2rem;
+.sub-heading-container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+
 }
+
 .react-logo {
-  width: 7%;
-  justify-self: center;
+  width: 8%;
+  align-self: center;
+  margin-top: .9rem;
 }
+
+
 
 .icon-scroll,
 .icon-scroll:before {
