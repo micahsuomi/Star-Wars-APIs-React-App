@@ -58,6 +58,11 @@
 
 }
 
+.btn-more:hover {
+    background-color: rgb(77, 73, 112);
+    transform: translateY(-.1rem);
+}
+
 .hide-text-container {
     display: flex;
     flex-direction: column;

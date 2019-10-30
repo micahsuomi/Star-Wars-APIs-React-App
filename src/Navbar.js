@@ -16,22 +16,26 @@ class Navbar extends Component {
             starships: "Starships",
             movieRatings: "Movie Ratings",
             contact: "About Me",
-            addClass: true
+            addClass: true,
+            hidelineClass: false,
+             
         }
 
         this.toggle = this.toggle.bind(this);
         
     }
     toggle() {
-        this.setState({addClass: !this.state.addClass});
+        this.setState({addClass: !this.state.addClass, hideClass: !this.state.hideClass        });
     }
+    
 
     render() {
         let navLinksClass = ["navbar-links open"];
         if(this.state.addClass) {
             navLinksClass.push("open");
         }
-     
+
+
         return(
             <div className="navbar">
                 <img className="logo" src="http://graphichive.net/uploaded/fordesigner/1313321222.jpg" alt="logo" />
@@ -49,9 +53,9 @@ class Navbar extends Component {
                 <div className="hamburger-bar-placeholder">
                 <div className="hamburger-container">
                     <div className="hamburger" onClick={this.toggle}>{this.state.addClass}
-                    <div className="line"></div>
-                    <div className="line"></div>
-                    <div className="line"></div>
+                    <div className={"line"}>{this.state.addSecondClass}</div>
+                    <div className={"line"}>{this.state.addThirdClass}</div>
+                    <div className={"line"}>{this.state.addFourthClass}</div>
                     </div>
             </div>                
             </div>
