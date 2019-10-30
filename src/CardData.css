@@ -6,7 +6,7 @@
     text-align: center;
     color: var(--darkblue);
     font-size: var(--font-size-medium);
-    margin-top: 3rem;
+    margin-top: 3.7rem;
 
 }
 
@@ -15,7 +15,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
     
 }
 
