@@ -57,7 +57,7 @@ render() {
 
                 <div className="movie-container" data-aos="fade-right">
                     <div className="movie-image-container">
-                    <img src="https://archive.nerdist.com/wp-content/uploads/2016/03/Kylo-Ren-Vanity-Fair.jpg" alt="the force awakens" className="movie-rating-img"/>
+                    <img src="https://miro.medium.com/max/1200/1*lweIHUCSqhk9sA-PFdl0Pg.jpeg" alt="the force awakens" className="movie-rating-img"/>
                     </div>
                         <div class="movie-rating-body-details">
                         <h4 className="movie-header movie-header-bold">Title: {this.state.movie1.title}</h4>
