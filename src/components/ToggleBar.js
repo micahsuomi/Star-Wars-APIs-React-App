@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './ToggleBar.css';
+import '../assets/style/ToggleBar.css';
 
 class ToggleBar extends Component {
     constructor() {

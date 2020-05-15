@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.css';
+import '../assets/style/About.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -26,7 +26,7 @@ const About = (props) => {
             <div className="about-left" data-aos="fade-right">
             <h2 className="about-header">{props.heading}</h2>
             <p className="about-description">{props.paragraph}</p>
-            <button className="btn-learn-more"><a href="https://swapi.co/" target="blank">Learn More</a></button>
+            <button className="btn-learn-more"><a href="https://swapi.dev/" target="blank">Learn More</a></button>
             </div>
 
             

@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import './Navbar.css';
-
-
+import '../assets/style/Navbar.css';
 
 class Navbar extends Component {
 
@@ -25,7 +23,7 @@ class Navbar extends Component {
         
     }
     toggle() {
-        this.setState({addClass: !this.state.addClass, hideClass: !this.state.hideClass        });
+        this.setState({addClass: !this.state.addClass, hideClass: !this.state.hideClass});
     }
     
 

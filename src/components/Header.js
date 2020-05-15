@@ -1,13 +1,9 @@
-import React, {Component} from 'react';
-import './Header.css';
+import React from 'react';
+import '../assets/style/Header.css';
 
 
-class Header extends Component {
-    constructor() {
-        super();
-        this.state = {}
-    }
-    render() {
+const Header = () => {
+    
         return(
             <div className="header-container" id="home">
                 <div className="header-wrapper">
@@ -34,5 +30,5 @@ class Header extends Component {
             </div>
         )
     }
-}
+
 export default Header;

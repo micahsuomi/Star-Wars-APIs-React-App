@@ -62,6 +62,10 @@
     transform: translateY(-.1rem);
 }
 
+.btn-learn-more:focus {
+    outline: none;
+}
+
 
 @media(max-width: 768px) {
 

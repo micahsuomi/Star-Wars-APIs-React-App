@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './MovieRating.css';
+import '../assets/style/MovieRating.css';
 import Star from './Star';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -30,8 +30,8 @@ class MovieRating extends Component {
 
     componentDidMount() {
         this.setState({loading: true})
-        Promise.all ([fetch("https://swapi.co/api/films/7/"), fetch("https://swapi.co/api/films/6/"),
-        fetch("https://swapi.co/api/films/3/"), fetch("https://swapi.co/api/films/4/") ])
+        Promise.all ([fetch("https://swapi.dev/api/films/7/"), fetch("https://swapi.dev/api/films/6/"),
+        fetch("https://swapi.dev/api/films/3/"), fetch("https://swapi.dev/api/films/4/") ])
         .then(([response1, response2, response3, response4]) =>  {
             return Promise.all ([response1.json(), response2.json(), response3.json(), response4.json()])
         })
@@ -59,7 +59,7 @@ render() {
                     <div className="movie-image-container">
                     <img src="https://miro.medium.com/max/1200/1*lweIHUCSqhk9sA-PFdl0Pg.jpeg" alt="the force awakens" className="movie-rating-img"/>
                     </div>
-                        <div class="movie-rating-body-details">
+                        <div className="movie-rating-body-details">
                         <h4 className="movie-header movie-header-bold">Title: {this.state.movie1.title}</h4>
                         <h4 className="movie-header movie-header-bold">Director: {this.state.movie1.director}</h4>
                         </div>
@@ -73,7 +73,7 @@ render() {
                     <div className="movie-image-container">
                     <img src="https://www.syfy.com/sites/syfy/files/styles/1200x680/public/wire/legacy/revengeofthesith.jpg" alt="the revenge of the sith" className="movie-rating-img"/>
                     </div>
-                        <div class="movie-rating-body-details">
+                        <div className="movie-rating-body-details">
                         <h4 className="movie-header movie-header-bold">Title: {this.state.movie2.title}</h4>
                         <h4 className="movie-header movie-header-bold">Director: {this.state.movie2.director}</h4>
                         </div>
@@ -87,7 +87,7 @@ render() {
                     <div className="movie-image-container">
                     <img src="https://medias.spotern.com/spots/w640/110/110061-1532336916.jpg" alt="the return of the jedi" className="movie-rating-img"/>
                     </div>
-                        <div class="movie-rating-body-details">
+                        <div className="movie-rating-body-details">
                         <h4 className="movie-header movie-header-bold">Title: {this.state.movie3.title}</h4>
                         <h4 className="movie-header movie-header-bold">Director: {this.state.movie3.director}</h4>
                         </div>

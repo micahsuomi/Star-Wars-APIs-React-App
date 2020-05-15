@@ -1,19 +1,20 @@
 import React from 'react';
 import './App.css';
-import Navbar from './Navbar';
-import Header from './Header';
-import About from './About';
-import MovieCard from './MovieCard';
-import CharacterCard from './CharacterCard';
-import PlanetCard from './PlanetCard';
-import StarshipCard from './StarshipCard';
-import MovieRating from './MovieRating';
-import AboutMe from './AboutMe';
-import Footer from './Footer';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import About from './components/About';
+import MovieCard from './components/MovieCard';
+import CharacterList from './components/CharacterList';
+import PlanetCard from './components/PlanetCard';
+import SpeciesCardList from './components/SpeciesCardList';
+import StarshipCard from './components/StarshipCard';
+import MovieRating from './components/MovieRating';
+import AboutMe from './components/AboutMe';
+import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
+/*
 AOS.init({
     offset: 400,
     duration: 800
@@ -24,18 +25,19 @@ AOS.init({
     return window.innerWidth < maxWidth;
   }
 
-})
+})*/
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Navbar />
       <Header />
       <About />
       <MovieCard />
-      <CharacterCard />
+      <CharacterList />
       <PlanetCard />
       <StarshipCard />
+      <SpeciesCardList />
       <MovieRating />
       <AboutMe />
       <Footer />

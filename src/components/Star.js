@@ -1,13 +1,12 @@
 import React,  {Component} from 'react';
-import './Star.css';
-
+import '../assets/style/Star.css';
 
 class Star extends Component {
     constructor() {
         super();
         this.state={
             score: "",
-            smiley:""
+            smiley: ""
         };
     
         this.scorePoor = this.scorePoor.bind(this);

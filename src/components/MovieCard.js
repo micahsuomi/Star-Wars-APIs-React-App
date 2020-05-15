@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import './CardData.css';
+import '../assets/style/Card.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-
-
 
 class MovieCard extends Component {
     constructor() {
@@ -22,17 +19,16 @@ class MovieCard extends Component {
     }
     componentDidMount() {
         this.setState({loading: true})
-        Promise.all ([fetch("https://swapi.co/api/films/6/"), fetch("https://swapi.co/api/films/7/"),
-        fetch("https://swapi.co/api/films/3/") ])
+        Promise.all ([fetch("https://swapi.dev/api/films/6/"), fetch("https://swapi.dev/api/films/1/"),
+        fetch("https://swapi.dev/api/films/3/") ])
         .then(([response1, response2, response3]) =>  {
             return Promise.all ([response1.json(), response2.json(), response3.json()])
         })
         .then(data => {
-            console.log(data);
             this.setState({
                 loading: false,
                 movie1: data[0],
-                movie2:data[1],
+                movie2: data[1],
                 movie3: data[2]
             })
         })
@@ -63,7 +59,7 @@ class MovieCard extends Component {
 
 
             <div className="card-container" data-aos="flip-left">
-                <div className="card-image"><img src="https://img.cinemablend.com/filter:scale/quill/3/8/3/d/f/9/383df9da6260856599d9a6284f12628a355f4ea7.jpg?mw=600" alt="the force awakens" className="card-img"/></div>
+                <div className="card-image"><img src="https://i0.wp.com/movieassault.com/wp-content/uploads/2018/07/starwars.jpg?resize=810%2C360" alt="a new hope" className="card-img"/></div>
                 <div className="card-body">
                 <ul className="card-details">
                 <li className="card-detail"><span className="card-detail-bold">Title:</span> {this.state.movie2.title}</li>

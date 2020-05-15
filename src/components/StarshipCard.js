@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './CardData.css';
+import '../assets/style/Card.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -23,7 +23,7 @@ class StarshipCard extends Component {
     }
     componentDidMount() {
         this.setState({loading: true})
-        Promise.all([fetch("https://swapi.co/api/starships/2/"), fetch("https://swapi.co/api/starships/12/"), fetch("https://swapi.co/api/starships/15/")])
+        Promise.all([fetch("https://swapi.dev/api/starships/2/"), fetch("https://swapi.dev/api/starships/12/"), fetch("https://swapi.dev/api/starships/15/")])
 
             .then(([response1, response2, response3]) =>  {
                 return Promise.all ([response1.json(), response2.json(), response3.json()])

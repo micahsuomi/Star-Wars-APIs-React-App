@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './CardData.css';
+import '../assets/style/Card.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -23,13 +23,12 @@ class PlanetCard extends Component {
     }
     componentDidMount() {
         this.setState({loading: true})
-        Promise.all([fetch("https://swapi.co/api/planets/1/"), fetch("https://swapi.co/api/planets/2/"), fetch("https://swapi.co/api/planets/3/")])
+        Promise.all([fetch("https://swapi.dev/api/planets/1/"), fetch("https://swapi.dev/api/planets/2/"), fetch("https://swapi.dev/api/planets/3/")])
 
             .then(([response1, response2, response3]) =>  {
                 return Promise.all ([response1.json(), response2.json(), response3.json()])
             })
             .then(data => {
-                console.log(data);
                 this.setState({
                     loading: false,
                     planet1: data[0],
