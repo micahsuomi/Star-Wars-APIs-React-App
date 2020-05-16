@@ -18,11 +18,7 @@ class SpeciesCardList extends Component {
         fetch("https://swapi.dev/api/species/")
         .then(response => response.json())
         .then(data => {
-            console.log(data.results)
-            for(const specie of data.results) {
-                console.log(specie)
-            }
-
+           
             this.setState({
                 loading: true,
                 cardsData: data.results

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import CharacterCard from './CharacterCard';
 import '../assets/style/Card.css';
-import { characterData } from './characterData';
 
 
 const API = 'https://swapi.dev/api/people/?page=1'
@@ -30,10 +29,10 @@ class CharacterList extends Component {
     render() {
         const charactersList = this.state.characters.map((character, index) => (
             <CharacterCard key={index}
-                           img={`${characterData.map((img) => img.img)}`}
                            name={character.name}
                            gender={character.gender}
                            height={character.height}
+                           mass={character.mass}
                            birthYear={character.birth_year}/>
         ))
         return (

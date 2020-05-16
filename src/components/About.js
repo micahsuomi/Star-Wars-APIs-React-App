@@ -26,9 +26,10 @@ const About = (props) => {
             <div className="about-left" data-aos="fade-right">
             <h2 className="about-header">{props.heading}</h2>
             <p className="about-description">{props.paragraph}</p>
-            <button className="btn-learn-more"><a href="https://swapi.dev/" target="blank">Learn More</a></button>
+            <button className="btn-learn-more">
+                <a href="https://swapi.dev/" target="blank">
+                    Learn More</a></button>
             </div>
-
             
             <div className="about-right" data-aos="fade-left"></div>
 
