@@ -1,4 +1,8 @@
-import React from 'react'
+import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const CharacterCard = (props) => {
     let {name, gender, height, mass, birthYear} = props;
@@ -37,9 +41,7 @@ const CharacterCard = (props) => {
     ]
     let index = 0;
     let image 
-    for (const i in images) {
-        let {img} = images[i]
-    }
+    
     if(name.includes('Luke Skywalker')) {
         image = images[index].img
         console.log(images)
@@ -74,6 +76,11 @@ const CharacterCard = (props) => {
     else {
         image = characterImg
     }
+
+    AOS.init({
+        offset: 400,
+        duration: 800
+      });
 
     return (
         <div>

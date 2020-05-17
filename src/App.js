@@ -1,5 +1,10 @@
 import React from 'react';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import About from './components/About';
@@ -29,20 +34,26 @@ AOS.init({
 
 const App = () => {
   return (
+    <Router>
     <div className="App">
       <Navbar />
-      <Header />
-      <About />
-      <MovieCard />
-      <CharacterList />
-      <PlanetCard />
-      <StarshipCard />
-      <SpeciesCardList />
-      <MovieRating />
-      <AboutMe />
+      <Switch>
+      <Route path={'/about'} component={About} />
+      <Route path={'/movies'} component={MovieCard} />
+      <Route path={'/characters'} component={CharacterList} />
+      <Route path={'/planets'} component={PlanetCard} />
+      <Route path={'/starships'} component={StarshipCard} />
+      <Route path={'/species'} component={SpeciesCardList} />
+      <Route path={'/movieratings'} component={MovieRating} />
+      <Route path={'/aboutme'} component={AboutMe} />
+      <Route path={'/'} component={Header} /> 
+      </Switch>
+
       <Footer />
 
     </div>
+    </Router>
+
   );
 }
 

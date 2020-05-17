@@ -1,11 +1,10 @@
 .navbar {
     background-color: var(--black);
-    padding: .9rem;
+    padding: .8rem 1rem;
     position: relative;
     position: fixed;
     width:100vw;
     z-index: 3;
-    height: 5rem;
 }
 
 .logo {
@@ -18,6 +17,7 @@
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .nav-link {

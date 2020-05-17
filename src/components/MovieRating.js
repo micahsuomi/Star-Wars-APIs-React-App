@@ -30,7 +30,7 @@ class MovieRating extends Component {
 
     componentDidMount() {
         this.setState({loading: true})
-        Promise.all ([fetch("https://swapi.dev/api/films/7/"), fetch("https://swapi.dev/api/films/6/"),
+        Promise.all ([fetch("https://swapi.dev/api/films/1/"), fetch("https://swapi.dev/api/films/6/"),
         fetch("https://swapi.dev/api/films/3/"), fetch("https://swapi.dev/api/films/4/") ])
         .then(([response1, response2, response3, response4]) =>  {
             return Promise.all ([response1.json(), response2.json(), response3.json(), response4.json()])
@@ -57,11 +57,13 @@ render() {
 
                 <div className="movie-container" data-aos="fade-right">
                     <div className="movie-image-container">
-                    <img src="https://miro.medium.com/max/1200/1*lweIHUCSqhk9sA-PFdl0Pg.jpeg" alt="the force awakens" className="movie-rating-img"/>
+                    <img src="https://img.cinemablend.com/filter:scale/quill/b/4/e/f/0/7/b4ef07881ae19e2df9dc1a5617e3108c4e47649f.jpg?mw=600" alt={this.state.movie1.title} className="movie-rating-img"/>
                     </div>
                         <div className="movie-rating-body-details">
                         <h4 className="movie-header movie-header-bold">Title: {this.state.movie1.title}</h4>
                         <h4 className="movie-header movie-header-bold">Director: {this.state.movie1.director}</h4>
+                        <h4 className="movie-header movie-header-bold">Producer: {this.state.movie1.producer}</h4>
+
                         </div>
                         <div className="rate-movie">
                         <h4 className="movie-header movie-header-bold">{this.state.rate}</h4>
@@ -71,11 +73,13 @@ render() {
 
                 <div className="movie-container" data-aos="fade-left">
                     <div className="movie-image-container">
-                    <img src="https://www.syfy.com/sites/syfy/files/styles/1200x680/public/wire/legacy/revengeofthesith.jpg" alt="the revenge of the sith" className="movie-rating-img"/>
+                    <img src="https://www.syfy.com/sites/syfy/files/styles/1200x680/public/wire/legacy/revengeofthesith.jpg" alt={this.state.movie2.title} className="movie-rating-img"/>
                     </div>
                         <div className="movie-rating-body-details">
                         <h4 className="movie-header movie-header-bold">Title: {this.state.movie2.title}</h4>
                         <h4 className="movie-header movie-header-bold">Director: {this.state.movie2.director}</h4>
+                        <h4 className="movie-header movie-header-bold">Producer: {this.state.movie2.producer}</h4>
+
                         </div>
                         <div className="rate-movie">
                         <h4 className="movie-header movie-header-bold">{this.state.rate}</h4>
@@ -85,11 +89,12 @@ render() {
 
                 <div className="movie-container"  data-aos="fade-right">
                     <div className="movie-image-container">
-                    <img src="https://medias.spotern.com/spots/w640/110/110061-1532336916.jpg" alt="the return of the jedi" className="movie-rating-img"/>
+                    <img src="https://medias.spotern.com/spots/w640/110/110061-1532336916.jpg" alt={this.state.movie3.title} className="movie-rating-img"/>
                     </div>
                         <div className="movie-rating-body-details">
                         <h4 className="movie-header movie-header-bold">Title: {this.state.movie3.title}</h4>
                         <h4 className="movie-header movie-header-bold">Director: {this.state.movie3.director}</h4>
+                        <h4 className="movie-header movie-header-bold">Producer: {this.state.movie3.producer}</h4>
                         </div>
                         <div className="rate-movie">
                         <h4 className="movie-header movie-header-bold">{this.state.rate}</h4>
@@ -99,11 +104,13 @@ render() {
 
                 <div className="movie-container" data-aos="fade-left">
                     <div className="movie-image-container">
-                    <img src="https://www.syfy.com/sites/syfy/files/styles/1200x680/public/2018/05/the_phantom_menace_jar_jar_obi-wan_qui-gon.png" alt="the phantom menace" className="movie-rating-img"/>
+                    <img src="https://www.syfy.com/sites/syfy/files/styles/1200x680/public/2018/05/the_phantom_menace_jar_jar_obi-wan_qui-gon.png" alt={this.state.movie4.title} className="movie-rating-img"/>
                     </div>
                         <div class="movie-rating-body-details">
                         <h4 className="movie-header movie-header-bold">Title: {this.state.movie4.title}</h4>
                         <h4 className="movie-header movie-header-bold">Director: {this.state.movie4.director}</h4>
+                        <h4 className="movie-header movie-header-bold">Producer: {this.state.movie4.producer}</h4>
+
                         </div>
                         <div className="rate-movie">
                         <h4 className="movie-header movie-header-bold">{this.state.rate}</h4>

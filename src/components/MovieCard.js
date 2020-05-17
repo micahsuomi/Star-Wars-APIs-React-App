@@ -46,8 +46,8 @@ class MovieCard extends Component {
             <h2 className="cards-header">{this.state.loading === true ? "Loading..." :  this.state.moviesHeader }</h2>
                 <div className="cards-wrapper">
 
-            <div className="card-container" data-aos="flip-left">
-                <div className="card-image"><img src="https://img.cinemablend.com/quill/2/3/2/e/2/e/232e2e0b674c925b4dc746a321a0aae2fa357462.jpg" alt="revenge of the sith" className="card-img"/></div>
+            <div className="card-container movie-card" data-aos="flip-left">
+                <div className="card-image"><img src="https://img.cinemablend.com/quill/2/3/2/e/2/e/232e2e0b674c925b4dc746a321a0aae2fa357462.jpg" alt="revenge of the sith" className="card-img" style={{width: '100%', height: '20rem'}}/></div>
                 <div className="card-body">
                 <ul className="card-details">
                 <li className="card-detail"><span className="card-detail-bold">Title:</span> {this.state.movie1.title}</li>
@@ -58,8 +58,9 @@ class MovieCard extends Component {
             </div>
 
 
-            <div className="card-container" data-aos="flip-left">
-                <div className="card-image"><img src="https://i0.wp.com/movieassault.com/wp-content/uploads/2018/07/starwars.jpg?resize=810%2C360" alt="a new hope" className="card-img"/></div>
+            <div className="card-container movie-card" data-aos="flip-left">
+                <div className="card-image">
+                    <img src="https://i0.wp.com/movieassault.com/wp-content/uploads/2018/07/starwars.jpg?resize=810%2C360" alt="a new hope" className="card-img" style={{width: '100%', height: '20rem'}}/></div>
                 <div className="card-body">
                 <ul className="card-details">
                 <li className="card-detail"><span className="card-detail-bold">Title:</span> {this.state.movie2.title}</li>
@@ -70,8 +71,8 @@ class MovieCard extends Component {
             </div>
 
 
-            <div className="card-container" data-aos="flip-left">
-                <div className="card-image"><img src="https://img.cinemablend.com/filter:scale/quill/b/4/e/f/0/7/b4ef07881ae19e2df9dc1a5617e3108c4e47649f.jpg?mw=600" alt="return of the jedi" className="card-img"/></div>
+            <div className="card-container movie-card" data-aos="flip-left">
+                <div className="card-image"><img src="https://img.cinemablend.com/filter:scale/quill/b/4/e/f/0/7/b4ef07881ae19e2df9dc1a5617e3108c4e47649f.jpg?mw=600" alt="return of the jedi" className="card-img" style={{width: '100%', height: '20rem'}}/></div>
                 <div className="card-body">
                 <ul className="card-details">
                 <li className="card-detail"><span className="card-detail-bold">Title:</span> {this.state.movie3.title}</li>

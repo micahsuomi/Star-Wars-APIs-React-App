@@ -6,7 +6,10 @@ class Star extends Component {
         super();
         this.state={
             score: "",
-            smiley: ""
+            smiley: "",
+            isPoorClicked: false,
+            isAverageClicked: false,
+            isGoodClicked: false,
         };
     
         this.scorePoor = this.scorePoor.bind(this);
@@ -17,31 +20,56 @@ class Star extends Component {
     }
 
     scorePoor() {
-        console.log('scored poor');
-        this.setState({score: "POOR",
-           smiley:"😒"})
+        this.setState({
+        score: "POOR",
+        smiley:"😒",
+        isPoorClicked: true,
+        isAverageClicked: false,
+        isGoodClicked: false,
+
+    })
     }
 
     scoreMedium() {
-        console.log('scored average');
-        this.setState({score: "AVERAGE",
-        smiley: "😐"})
+        this.setState({
+        score: "AVERAGE",
+        smiley: "😐",
+        isPoorClicked: false,
+        isAverageClicked: true,
+        isGoodClicked: false,
+
+    })
 
     }
 
     scoreGood() {
-        console.log('scored good');
-        this.setState({score: "GOOD",
-        smiley: "🙂"})
+        this.setState({
+        score: "GOOD",
+        smiley: "🙂",
+        isPoorClicked: false,
+        isAverageClicked: false,
+        isGoodClicked: true
+    })
     }
 
     render() {
         return(
             <div>
             <div className="stars-wrapper">
-                    <i className="far fa-star fa-2x red" onClick={this.scorePoor}></i>     
-                    <i className="far fa-star fa-2x orange" onClick={this.scoreMedium}></i>      
-                    <i className="far fa-star fa-2x green" onClick={this.scoreGood}></i>     
+                    <i className="far fa-star fa-2x red" 
+                    onClick={this.scorePoor}
+                    style={this.state.isPoorClicked ? {color: 'rgb(226, 79, 79)'} : {color: 'black'}}>
+                    </i>    
+
+                    <i className="far fa-star fa-2x orange" 
+                    onClick={this.scoreMedium}
+                    style={this.state.isAverageClicked ? {color: 'orange'} : {color: 'black'}}>
+                    </i>
+
+                    <i className="far fa-star fa-2x green" 
+                    onClick={this.scoreGood}
+                    style={this.state.isGoodClicked ? {color: 'green'} : {color: 'black'}}>
+                    </i>     
             </div>
                 
                 <div className="score">{this.state.score}{this.state.smiley}</div>
@@ -53,5 +81,7 @@ class Star extends Component {
         )
     }
 }
+
+let styleOrange = {backgroundColor: 'red'}
 
 export default Star;

@@ -14,7 +14,7 @@ const About = (props) => {
         props = {
 
             heading: "About",
-            paragraph: "This page uses the SWAPI (Star Wars API) website to display Star Wars data. Here are displayed some movies, characters, planets and starships. Hope you'll like the design! If you want to learn more about the SWAPI website, click on the button below" 
+            paragraph: "This website uses the SWAPI (Star Wars API) website to display Star Wars data. Here are displayed some movies, characters, planets, species and starships data. Hope you'll like the design! If you want to learn more about the SWAPI website, click on the button below." 
 
         } 
 
@@ -28,7 +28,7 @@ const About = (props) => {
             <p className="about-description">{props.paragraph}</p>
             <button className="btn-learn-more">
                 <a href="https://swapi.dev/" target="blank">
-                    Learn More</a></button>
+                    Learn More On SWAPI</a></button>
             </div>
             
             <div className="about-right" data-aos="fade-left"></div>

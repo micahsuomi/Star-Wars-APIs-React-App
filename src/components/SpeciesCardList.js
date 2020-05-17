@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import SpeciesCard from './SpeciesCard';
-import {speciesData} from './SpeciesData';
-
-
 
 class SpeciesCardList extends Component {
     constructor(props) {
