@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 
 AOS.init({
-    offset: 400,
+    offset: 200,
     duration: 800
 });
 
@@ -31,7 +31,9 @@ const About = (props) => {
                     Learn More On SWAPI</a></button>
             </div>
             
-            <div className="about-right" data-aos="fade-left"></div>
+            <div className="about-right" data-aos="fade-left">
+                <img src="https://cdn.vox-cdn.com/thumbor/WPU-WT6wZXMUVVZ2JaH09ozK1fI=/0x0:640x427/1200x800/filters:focal(269x163:371x265)/cdn.vox-cdn.com/uploads/chorus_image/image/54636905/Rey_and_BB-8.0.0.jpg" alt="the force awakens"/>
+            </div>
 
             </div>
         </div>

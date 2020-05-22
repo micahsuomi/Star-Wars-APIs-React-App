@@ -41,13 +41,14 @@
     justify-content: flex-end;
 }
 
-@media(max-width: 550px) {
+@media(max-width: 768px) {
 
     .logo {
         width: 7%;
     }
-    nav {
+    .navbar {
         position: relative;
+        height: 45px;
     }
     
     .hamburger {
@@ -131,5 +132,17 @@
     
     }
 
+    .navbar-links.close {
+        -webkit-clip-path: circle(3.4% at 100% 0);
+        clip-path: circle(3.4% at 100% 0);  
+    }
+
     
+}
+
+@media(max-width: 500px) {
+    
+    .navbar {
+        height: 38px;
+    }
 }

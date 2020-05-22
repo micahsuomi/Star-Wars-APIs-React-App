@@ -6,13 +6,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    align-items: center;
     min-height: 90vh;
 
 }
 
 .about-right {
-    background: url("https://cdn.vox-cdn.com/thumbor/WPU-WT6wZXMUVVZ2JaH09ozK1fI=/0x0:640x427/1200x800/filters:focal(269x163:371x265)/cdn.vox-cdn.com/uploads/chorus_image/image/54636905/Rey_and_BB-8.0.0.jpg") no-repeat center center/cover;
+    padding: 1rem;
+    
 
+}
+.about-right img {
+    width: 100%;
 }
 
 .about-left {

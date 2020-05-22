@@ -4,6 +4,7 @@
     width: 100%;
     background-image: linear-gradient(rgba(147, 204, 236, 0), rgba(15, 25, 53, 0)),url('https://mediad.publicbroadcasting.net/p/wuis/files/styles/x_large/public/202002/marvel-star-wars-allegiance.jpg');
     background-position: center;
+    background-size: cover;
     
 
 }
@@ -137,11 +138,13 @@
   }
 
   .header-left {
-    height: 50vh;
+    display: none;
   }
 
   .header-right-wrapper {
     top: 15%;
+    position: absolute;
+    top: 35%;
   }
   .main-heading {
     margin-top: 1rem;
@@ -169,5 +172,10 @@
   transform: translateY(36px);
 
 }
+}
+}
+@media screen and (max-width: 500px) {
+  .header-right-wrapper {
+    width: 41rem;
 }
 }
